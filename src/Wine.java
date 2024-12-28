@@ -11,10 +11,8 @@ public class Wine extends Product {
 
     @Override
     public String getInfo() {
-        return "Wine name: " + name + "\n" +
-                "Wine barcode: " + barcode + "\n" +
-                "Wine base price: " + basePrice + "\n" +
-                "Wine volume: " + volume;
+        return super.getInfo() + "\n" +
+                "Wine Volume: " + this.volume;
     }
 
     @Override
@@ -22,3 +20,6 @@ public class Wine extends Product {
         return super.calculatePrice() * (1 + ADDITIONAL_TAX_RATE);
     }
 }
+
+
+

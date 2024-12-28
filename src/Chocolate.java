@@ -9,9 +9,7 @@ public class Chocolate extends Product {
 
     @Override
     public String getInfo() {
-        return "Chocolate name: " + name + "\n" +
-                "Chocolate barcode: " + barcode + "\n" +
-                "Chocolate base price: " + basePrice + "\n" +
-                "Chocolate weight: " + weight;
+        return super.getInfo() + "\n" +
+                "Chocolate Weight: " + this.weight;
     }
 }

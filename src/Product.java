@@ -23,6 +23,7 @@ public class Product {
     public String getInfo() {
         return "Product name: " + name + "\n" +
                 "Product barcode: " + barcode + "\n" +
-                "Product base price: " + basePrice;
+                "Product base price: " + basePrice + "\n" +
+                "Product final price: " + calculatePrice();
     }
 }
